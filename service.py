@@ -1,9 +1,16 @@
+import os
 from flask import Flask, request, jsonify
 import json
 from datetime import datetime, date, time
 from sklearn.externals import joblib
 
 app = Flask(__name__)
+
+@app.route("/info", methods=['GET'])
+def info():
+    print ("Request GET received")
+    return "Request GET received"
+
 
 @app.route("/prediction", methods=['POST'])
 def prediction():
@@ -160,4 +167,7 @@ def is_free_day(day_to_prediction, month_to_prediction):
     return is_workday
 
 if __name__ == "__main__":
-    app.run(port=8085, debug=True)
+    debug = False
+    if os.getenv('DEBUG') == 'True':
+        debug = True
+    app.run(port=8085, host="0.0.0.0", debug=debug)

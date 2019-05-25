@@ -144,18 +144,18 @@ def is_free_day(day_to_prediction, month_to_prediction):
     final_month = month_to_prediction
     free_days=[]
 
-    free_days.append(date(year=2018, month=1, day=1))
-    free_days.append(date(year=2018, month=1, day=6))
-    free_days.append(date(year=2018, month=2, day=28))
-    free_days.append(date(year=2018, month=5, day=1))
-    free_days.append(date(year=2018, month=8, day=15))
-    free_days.append(date(year=2018, month=8, day=19))
-    free_days.append(date(year=2018, month=9, day=8))
-    free_days.append(date(year=2018, month=10, day=12))
-    free_days.append(date(year=2018, month=11, day=1))
-    free_days.append(date(year=2018, month=12, day=6))
-    free_days.append(date(year=2018, month=12, day=8))
-    free_days.append(date(year=2018, month=12, day=25))
+    free_days.append(date(year=2019, month=1, day=1))
+    free_days.append(date(year=2019, month=1, day=6))
+    free_days.append(date(year=2019, month=2, day=28))
+    free_days.append(date(year=2019, month=5, day=1))
+    free_days.append(date(year=2019, month=8, day=15))
+    free_days.append(date(year=2019, month=8, day=19))
+    free_days.append(date(year=2019, month=9, day=8))
+    free_days.append(date(year=2019, month=10, day=12))
+    free_days.append(date(year=2019, month=11, day=1))
+    free_days.append(date(year=2019, month=12, day=6))
+    free_days.append(date(year=2019, month=12, day=8))
+    free_days.append(date(year=2019, month=12, day=25))
 
     for day in free_days:
         if day.month == final_month and day.day == final_day:
